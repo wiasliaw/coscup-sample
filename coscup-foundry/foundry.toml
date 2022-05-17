@@ -1,0 +1,12 @@
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[default]
+src = 'src'
+test = 'test'
+out = 'dist'
+libs = ['lib']
+
+# solidity
+solc_version = '0.8.13'
+optimizer = true
+optimizer_runs = 200
+evm_version = 'berlin'
