@@ -1,3 +1,6 @@
 [submodule "coscup-foundry/lib/openzeppelin-contracts"]
 	path = coscup-foundry/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "coscup-foundry/lib/forge-std"]
+	path = coscup-foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
