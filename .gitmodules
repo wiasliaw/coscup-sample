@@ -1,0 +1,3 @@
+[submodule "coscup-foundry/lib/openzeppelin-contracts"]
+	path = coscup-foundry/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
