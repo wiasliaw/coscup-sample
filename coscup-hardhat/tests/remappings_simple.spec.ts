@@ -16,4 +16,10 @@ describe('remappings simple', () => {
     await simple.set(33);
     expect(await simple.get()).eq(33);
   });
+
+  it('should revert with not the owner', async () => {
+    const [owner, other] = await ethers.getSigners();
+    await expect(simple.connect(other).set(33))
+      .revertedWith('Ownable: caller is not the owner');
+  });
 });

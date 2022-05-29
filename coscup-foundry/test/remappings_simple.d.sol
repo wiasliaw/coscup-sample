@@ -15,4 +15,10 @@ contract ContractTest is Test {
         simple.set(33);
         assertEq(simple.get(), 33);
     }
+
+    function testOnlyOwner() public {
+        vm.prank(address(0x1234));
+        vm.expectRevert(bytes("Ownable: caller is not the owner"));
+        simple.set(33);
+    }
 }
